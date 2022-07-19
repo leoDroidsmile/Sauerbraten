@@ -287,6 +287,30 @@ void guiimage(char *path, char *action, float *scale, int *overlaid, char *alt, 
     }
 }
 
+void guiimageplayer(char* path, char* action, float* scale, int* overlaid, char* alt, char* title)
+{
+    if (!cgui) return;
+    Texture* t = textureload(path, 0, true, false);
+    if (t == notexture)
+    {
+        if (alt[0]) t = textureload(alt, 0, true, false);
+        if (t == notexture) return;
+    }
+    int ret = cgui->image(t, *scale, *overlaid != 0 ? title : NULL);
+    if (ret & G3D_UP)
+    {
+        if (*action)
+        {
+            updatelater.add().schedule(action);
+        }
+    }
+    else if (ret & G3D_ROLLOVER)
+    {
+        /*alias("guirolloverimgpath", path);*/
+        alias("guirolloveraction", action);
+    }
+}
+
 void guicolor(int *color)
 {
     if(cgui) 
@@ -595,6 +619,7 @@ COMMAND(guistrut,"fi");
 COMMAND(guispring, "i");
 COMMAND(guicolumn, "i");
 COMMAND(guiimage,"ssfiss");
+COMMAND(guiimageplayer, "ssfiss");
 COMMAND(guislider,"sbbs");
 COMMAND(guilistslider, "sss");
 COMMAND(guinameslider, "ssss");

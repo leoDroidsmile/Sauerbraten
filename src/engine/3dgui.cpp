@@ -347,7 +347,7 @@ struct gui : g3d_gui
                 {
                     hudnotextureshader->set();
                     glBlendFunc(GL_ZERO, GL_SRC_COLOR);
-                    gle::colorf(1, 0.5f, 0.5f);
+                    gle::colorf(0, 0.5f, 0.5f);
                     rect_(xi, yi, xs, ys);
                     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
                     hudshader->set();
@@ -367,9 +367,11 @@ struct gui : g3d_gui
         autotab();
         if(sizescale==0) sizescale = 1;
         int size = (int)(sizescale*2*FONTH)-SHADOW;
+        printf("hello");
         if(name[0] && visible() && (!throttle || throttlepreview(modelloaded(name))))
         {
             bool hit = ishit(size+SHADOW, size+SHADOW);
+            printf("hit %d", hit);
             float xs = size, ys = size, xi = curx, yi = cury;
             if(overlaid && hit && actionon)
             {

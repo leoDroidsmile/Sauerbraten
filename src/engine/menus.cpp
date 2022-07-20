@@ -166,10 +166,15 @@ void restoregui(int pos)
     menustart = totalmillis;
 }
 
+void playselectcharactersound() {
+    execident("playmenusound");
+}
+
 void showgui(const char *name)
 {
     menu *m = guis.access(name);
     if(!m) return;
+
     int pos = guistack.find(m);
     if(pos<0) pushgui(m);
     else restoregui(pos);
@@ -632,6 +637,7 @@ COMMAND(guikeyfield, "sis");
 COMMAND(guieditor, "siii");
 COMMAND(guicolor, "i");
 COMMAND(guitextbox, "siii");
+COMMAND(playselectcharactersound, "");
 
 void guiplayerpreview(int *model, int *team, int *weap, char *action, float *scale, int *overlaid, char *title)
 {
@@ -774,6 +780,8 @@ void menuprocess()
 {
     processingmenu = true;
     int wasmain = mainmenu, level = guistack.length();
+    printf("Level : %d", level);
+
     loopv(updatelater) updatelater[i].run();
     updatelater.shrink(0);
     if(wasmain > mainmenu || clearlater)

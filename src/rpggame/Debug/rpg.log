@@ -1,0 +1,64 @@
+﻿  pch.cpp
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dbghelp.h(1540): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dbghelp.h(3056): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+  pch.cpp
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dbghelp.h(1540): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dbghelp.h(3056): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+  pch.cpp
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dbghelp.h(1540): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\dbghelp.h(3056): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+  blend.cpp
+  cubeloader.cpp
+  lightmap.cpp
+  normal.cpp
+  octa.cpp
+  octaedit.cpp
+  octarender.cpp
+  physics.cpp
+  pvs.cpp
+  world.cpp
+  worldio.cpp
+  client.cpp
+  server.cpp
+  serverbrowser.cpp
+  3dgui.cpp
+  bih.cpp
+  blob.cpp
+  decal.cpp
+  dynlight.cpp
+  glare.cpp
+  Generating Code...
+  Compiling...
+  grass.cpp
+  material.cpp
+  rendergl.cpp
+  rendermodel.cpp
+  renderparticles.cpp
+  rendersky.cpp
+  rendertext.cpp
+  renderva.cpp
+  shader.cpp
+  shadowmap.cpp
+  texture.cpp
+  water.cpp
+  command.cpp
+  console.cpp
+  main.cpp
+  menus.cpp
+  movie.cpp
+  sound.cpp
+  Generating Code...
+  crypto.cpp
+  geom.cpp
+  glemu.cpp
+  stream.cpp
+  tools.cpp
+  zip.cpp
+  Generating Code...
+  ent.cpp
+  objset.cpp
+  rpg.cpp
+  Generating Code...
+  entities.cpp
+  rpg.vcxproj -> E:\Github\Sauerbraten\src\rpggame\..\..\bin\rpg_debug.exe
+  rpg.vcxproj -> ..\..\bin\rpg_debug.pdb (Full PDB)

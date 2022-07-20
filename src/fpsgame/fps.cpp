@@ -1306,7 +1306,6 @@ namespace game
     void loadconfigs()
     {
         execident("playsong");
-
         execfile("auth.cfg", false);
     }
 }

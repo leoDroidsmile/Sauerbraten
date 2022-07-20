@@ -209,7 +209,11 @@ enum
 
     S_HIT,
     
-    S_FLAGFAIL
+    S_FLAGFAIL,
+
+    // Added by truedev0420 for custom sounds
+    S_CHOOSE_YOUR_CHARACTER,
+    S_CONFIRM
 };
 
 // network messages codes, c2s, c2c, s2c
